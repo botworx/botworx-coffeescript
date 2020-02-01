@@ -1,0 +1,46 @@
+#
+#miascript
+#
+fs = require 'fs'
+path = require 'path'
+glob = require 'glob'
+{exec, spawn} = require 'child_process'
+
+srcPath = 'src/'
+dstPath = 'lib/'
+
+printLn = (line) -> process.stdout.write line + '\n'
+printWarn = (line) -> process.stderr.write line + '\n'
+
+useLint = (args) ->
+  proc = spawn 'coffeelint', args
+  proc.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  proc.stdout.on 'data', (data) ->
+    printLn data.toString()
+  proc.on 'exit', (code) ->
+    callback?() if code is 0
+
+useCoffee = (args) ->
+  coffee = spawn 'coffee', args
+  coffee.stderr.on 'data', (data) ->
+    process.stderr.write data.toString()
+  coffee.stdout.on 'data', (data) ->
+    printLn data.toString()
+  coffee.on 'exit', (code) ->
+    callback?() if code is 0
+
+buildCoffee = (dst, src) ->
+  useCoffee(['-b', '-m', '-c', '-o', dst, src])
+
+watchCoffee = (dst, src) ->
+  useCoffee(['-b', '-m', '-w', '-c', '-o', dst, src])
+
+task 'lint', 'Check Syntax of Coffeescript', ->
+  useLint [srcPath]
+
+task 'build', 'Build project from src/*.coffee to lib/*.js', ->
+  buildCoffee dstPath, srcPath
+
+task 'watch', 'Watch src/ for changes', ->
+  watchCoffee dstPath, srcPath

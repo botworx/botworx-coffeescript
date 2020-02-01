@@ -1,2 +1,4 @@
 # Botworx-CoffeeScript
-This needs to be decaffeinated
+This is just for archival purposes
+
+It needs to be decaffeinated and mono-repo'd :(
