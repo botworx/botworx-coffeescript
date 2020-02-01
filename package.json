@@ -1,0 +1,33 @@
+{
+  "name": "miajs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "mocha ./test/src --recursive --compilers coffee:coffeescript/register --require source-map-support/register --reporter mochawesome --reporter-options reportDir=./test/report"
+  },
+  "main": "./lib",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chalk": "latest",
+    "coffeescript": "latest",
+    "debug": "latest",
+    "glob": "latest",
+    "js-yaml": "latest",
+    "json-stringify-safe": "latest",
+    "minimatch": "latest",
+    "source-map-support": "latest",
+    "vinyl": "latest",
+    "winston": "latest"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-sourcemaps": "latest",
+    "mocha": "latest",
+    "mochawesome": "latest"
+  }
+}

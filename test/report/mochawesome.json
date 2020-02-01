@@ -1,0 +1,2494 @@
+{
+  "stats": {
+    "suites": 68,
+    "tests": 55,
+    "passes": 55,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-12T03:00:44.412Z",
+    "end": "2018-06-12T03:00:44.529Z",
+    "duration": 117,
+    "testsRegistered": 55,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "328aec29-ca3e-4ecb-9fdb-ee926d1fff85",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "c771ce0b-ebf8-4442-8bc8-cc7868def331",
+        "title": "Rule",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/assert.coffee",
+        "file": "/test/src/assert.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "2196a388-17c8-43a2-9f70-17acab8a4929",
+            "title": "@fire",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/assert.coffee",
+            "file": "/test/src/assert.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Rule @fire should work",
+                "timedOut": false,
+                "duration": 7,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var c, c1, c2, ctx, i, len, m, ref, rnr;\nctx = new Context();\nc1 = new Believe(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = new Believe(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"All Clauses\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\nm = new Assert(c1);\n$$.$('Begin Task Execution');\nrnr = new Runner();\nrnr.def(new Trigger(Assert, Believe, __, _likes, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} likes Fish`);\n});\nrnr.post(m);\nreturn rnr.run();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "0886f0d5-4f73-4bb7-a28b-29de204480a3",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "0886f0d5-4f73-4bb7-a28b-29de204480a3"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 7,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0c5585ef-692d-42e4-94fc-bb9981054330",
+        "title": "Async",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/async.coffee",
+        "file": "/test/src/async.coffee",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Async \"before each\" hook",
+            "timedOut": false,
+            "duration": 6,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.pushLogger();\nreturn this.$('Baba');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ad80fdf2-3bd5-4eec-92a4-e0acd17700be",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Async \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.$('Yaga');\nreturn this.popLogger();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d02c07c3-b849-4683-8f1b-1b4f40521514",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "f3545f3d-305b-4b92-9765-87fa8464d437",
+            "title": "@call",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/async.coffee",
+            "file": "/test/src/async.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Async @call should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "cbc2b1c7-9a40-4eed-adc8-a0d47f9bd1b9",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "cbc2b1c7-9a40-4eed-adc8-a0d47f9bd1b9"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "1070fda8-b81f-4154-a713-4d1963b2bed7",
+        "title": "Attempt",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/attempt.coffee",
+        "file": "/test/src/attempt.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Attempt should work",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var c, c1, c2, ctx, i, len, m, ref, rnr;\nctx = new Context();\nc1 = new Believe(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = new Believe(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"All Clauses\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\nm = new Attempt(new Achieve(_Bob, _get, _Fish));\n$$.$('Begin Task Execution');\nrnr = new Runner();\nrnr.def(new Trigger(Attempt, Achieve, __, _get, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} getting Fish`);\n});\nrnr.post(m);\nreturn rnr.run();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "bb093b15-744d-4832-b9a6-8cd0bd362cd1",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "bb093b15-744d-4832-b9a6-8cd0bd362cd1"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "798014ea-56af-4f76-948b-4d90caab1a92",
+        "title": "Await",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/await.coffee",
+        "file": "/test/src/await.coffee",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Await \"before each\" hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.pushLogger();\nreturn this.$('Baba');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "db7b2f42-89fe-46a6-837e-f63fb4b67146",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Await \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.$('Yaga');\nreturn this.popLogger();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "12614e2d-9d38-433f-99a8-acee9ccf8b46",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Await should work",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var bar;\nbar = async function() {\n  return console.log((await foo()));\n};\nreturn bar();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b95deb35-ebc6-4f43-864f-898ee5887c49",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "should work",
+            "fullTitle": "Await should work",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var bar;\nbar = async function() {\n  return console.log((await foo2()));\n};\nreturn bar();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "19984ae1-8748-4c7f-8f09-0776c348270b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b95deb35-ebc6-4f43-864f-898ee5887c49",
+          "19984ae1-8748-4c7f-8f09-0776c348270b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "36f31c34-1647-4bd8-9a74-9ef7f583700a",
+        "title": "Task",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/call.coffee",
+        "file": "/test/src/call.coffee",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Task \"before each\" hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.pushLogger();\nreturn this.$('Baba');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "878a67d3-b879-48b7-ad01-fc282f04a129",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Task \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.$('Yaga');\nreturn this.popLogger();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f4ce7ccf-aadc-4f98-a3d5-d8154f97846e",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "4c97ba93-3e16-4541-933e-5d2df6153d84",
+            "title": "@call",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/call.coffee",
+            "file": "/test/src/call.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Task @call should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "6a5f7265-4343-4a78-8864-dbeffb2a3a10",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "6a5f7265-4343-4a78-8864-dbeffb2a3a10"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "f9605d1d-8c28-4291-bbf6-3c239f027dd7",
+        "title": "Task",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/chain.coffee",
+        "file": "/test/src/chain.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "d848a09c-cb09-4a8e-8561-9d972fa4f1a5",
+            "title": "@chain",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/chain.coffee",
+            "file": "/test/src/chain.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Task @chain should work",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "fb6e352f-47e4-4e60-b71c-51096bdb3c7b",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "fb6e352f-47e4-4e60-b71c-51096bdb3c7b"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "2e3a12ec-e9d2-41f4-b1a1-09fd00ceeb69",
+        "title": "Config",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/config.coffee",
+        "file": "/test/src/config.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Config should work",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "$$.$('Config Results');\n$$._(config());\n$$.$('Environment');\nreturn $$._(process.env);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f8bf9f6c-f83e-48b3-aadc-7ad7d2bacb4d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "f8bf9f6c-f83e-48b3-aadc-7ad7d2bacb4d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "8a901925-9d54-4fcb-b3c8-9705fd6a0a2a",
+        "title": "Context",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/context.coffee",
+        "file": "/test/src/context.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "db8f0519-a8c1-497c-a702-e8568faf297b",
+            "title": "@find",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/context.coffee",
+            "file": "/test/src/context.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Context @find should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var r;\nr = ctx.find(Believe, _Bob, _likes, _Fish);\n$$.$(\"Bob, likes, Fish\");\n$$._(r.toString());\nr = ctx.find(Believe, __, _likes, _Fish);\n$$.$(\"_, likes, Fish\");\n$$._(r.toString());\nr = ctx.find(Believe, __, _likes, __);\n$$.$(\"_, likes, _\");\nreturn $$._(r.toString());",
+                "err": {},
+                "isRoot": false,
+                "uuid": "5da2dff6-ad6f-4985-9228-dcce3821c9a1",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "5da2dff6-ad6f-4985-9228-dcce3821c9a1"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "b233e70d-fff1-4a4b-a819-2f2cafb24201",
+            "title": "@match",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/context.coffee",
+            "file": "/test/src/context.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Context @match should work",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var matches, r, results;\nmatches = ctx.match(Believe, _Bob, _likes, _Fish);\n$$.$(\"Bob, likes, Fish\");\nresults = [];\nfor (r of matches) {\n  results.push($$._(r.toString()));\n}\nreturn results;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "c1710121-1104-4134-a3cd-1daf6d17976d",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "should work",
+                "fullTitle": "Context @match should work",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var matches, r, results;\nmatches = ctx.match(Believe, __, _likes, __);\n$$.$(\"ctx.match(__, _likes, __)\");\nresults = [];\nfor (r of matches) {\n  results.push($$._(r.toString()));\n}\nreturn results;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "2865ac2b-2255-4c96-8df9-118a7716fe21",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "c1710121-1104-4134-a3cd-1daf6d17976d",
+              "2865ac2b-2255-4c96-8df9-118a7716fe21"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "79f7bd4a-fcd3-4558-8eeb-10107e5bbc62",
+            "title": "@iterator",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/context.coffee",
+            "file": "/test/src/context.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Context @iterator should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var results;\n//ctx.forEach (c) -> $$._ c\nresults = [];\nfor (c of ctx) {\n  results.push($$._(c));\n}\nreturn results;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b5b25009-c54d-4d83-9407-ea1eca8cc7f6",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "b5b25009-c54d-4d83-9407-ea1eca8cc7f6"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "35d9232b-0baa-4428-8445-bd4930df6fb2",
+        "title": "Method",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/count.coffee",
+        "file": "/test/src/count.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "eac88fc3-4d52-4670-8a2c-43d338c0a981",
+            "title": "@counter",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/count.coffee",
+            "file": "/test/src/count.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Method @counter should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "bc25ad01-d676-495c-b0fc-ddd8195fd1d9",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "bc25ad01-d676-495c-b0fc-ddd8195fd1d9"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "d9f44f3d-db20-4dcf-8dd7-bfeb38d4a42b",
+        "title": "Sequence",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/dsl.coffee",
+        "file": "/test/src/dsl.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "cdd4c047-f1c2-4c4c-8a47-c4315704e1ab",
+            "title": "@action",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/dsl.coffee",
+            "file": "/test/src/dsl.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Sequence @action should work",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(s1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "8132c734-2c52-4871-881e-4a569365d5bb",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "8132c734-2c52-4871-881e-4a569365d5bb"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "83fcbf7e-b5e9-455e-b04d-6e3d9bbf1418",
+        "title": "Task",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/hello.coffee",
+        "file": "/test/src/hello.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "f44bd6ae-11d2-49ee-a71a-331ef00fa64c",
+            "title": "@perform",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/hello.coffee",
+            "file": "/test/src/hello.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Task @perform should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var action;\naction = function() {\n  this.def(onAttempt(Achieve, null, _hello, null), function() {\n    this.def(onAttempt(Achieve, null, _say, __), function() {\n      var $t;\n      $t = this.msg.data.obj;\n      return $$.log($t);\n    });\n    this.perform(null, _say, \"Hello World\");\n    return this.perform(null, _say, \"Goodbye World\");\n  });\n  return this.perform(null, _hello, null);\n};\nreturn runner_().run(module_(action));",
+                "err": {},
+                "isRoot": false,
+                "uuid": "c44f1538-8e6a-406c-bb68-2f7f60f13d15",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "c44f1538-8e6a-406c-bb68-2f7f60f13d15"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "665c0877-7735-41a1-9be5-e882fd2dae96",
+        "title": "Task",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/import.coffee",
+        "file": "/test/src/import.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "33481679-cedc-47bd-a6ef-5dc017d6d2ff",
+            "title": "@import",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/import.coffee",
+            "file": "/test/src/import.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Task @import should work",
+                "timedOut": false,
+                "duration": 3,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_().run(module_(function() {\n  this.import(require, './cleavers');\n  $$.$(\"All Clauses\");\n  return $$._(_$(this.rnr.ctx.clauses));\n}));",
+                "err": {},
+                "isRoot": false,
+                "uuid": "0bd59d31-ef86-4921-ad33-b1cb79c68499",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "0bd59d31-ef86-4921-ad33-b1cb79c68499"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 3,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "6e4a15e2-3976-4da0-902a-00d95ba6d975",
+        "title": "TIterable",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/iterable.coffee",
+        "file": "/test/src/iterable.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "TIterable should work",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var A, B, b, l, results;\nA = (function() {\n  class A {};\n  A.iterator(function*() {\n    yield 'a';\n    return (yield 'b');\n  });\n  return A;\n}).call(this);\nB = (function() {\n  class B extends A {\n    * iterator() {\n      yield* super.iterator();\n      return (yield 'c');\n    }\n  };\n  B.TIterable();\n  return B;\n}).call(this);\nb = new B();\nresults = [];\nfor (l of b) {\n  results.push($$._(l));\n}\nreturn results;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ca51696c-3d7b-4f65-a9fb-6e1d960efda9",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "ca51696c-3d7b-4f65-a9fb-6e1d960efda9"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "4649d845-2804-4956-82c1-32f6e1da5df4",
+        "title": "Loop",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/loop.coffee",
+        "file": "/test/src/loop.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "c0e9e972-8961-48af-ba77-52ee6b814b82",
+            "title": "@action",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/loop.coffee",
+            "file": "/test/src/loop.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Loop @action should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t1;\nt1 = method_(function() {\n  return this.loop(function() {\n    return this.task(function() {\n      $$._(\"Hello\");\n      this.count = 10;\n      return this.main = function() {\n        $$._(this.count--);\n        if (this.count <= 0) {\n          $$._('Inner');\n          return this.fail();\n        }\n      };\n    }).task(function() {\n      return $$._(\"Loop\");\n    });\n  });\n});\nreturn runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "7691f121-4672-422c-8e3e-cca9c384ef17",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "7691f121-4672-422c-8e3e-cca9c384ef17"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "4901aaf7-7628-4143-a131-e6119e0e41b6",
+        "title": "Matching",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+        "file": "/test/src/match.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "1e54a371-0a9c-45c9-aaec-396a6085d54c",
+            "title": "Values",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "match __, null",
+                "fullTitle": "Matching Values match __, null",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match(__, null)).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "2b45f489-2041-4dae-b9ed-9eb8baa48fbf",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match null, null",
+                "fullTitle": "Matching Values match null, null",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match(null, null)).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "5a98df10-6b7a-4916-a73d-e465a8c79e82",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match null, 'hello'",
+                "fullTitle": "Matching Values match null, 'hello'",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match(null, 'hello')).to.be.false;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "229d84b3-6f5f-4bd0-819e-beb2c9ad0896",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match 'hello', 'hello'",
+                "fullTitle": "Matching Values match 'hello', 'hello'",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match('hello', 'hello')).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d4e88a56-9410-4c51-87bf-e51db6c7e434",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match 'hello', 'goodbye'",
+                "fullTitle": "Matching Values match 'hello', 'goodbye'",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match('hello', 'goodbye')).to.be.false;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "f72d5b6b-8eef-4a78-94b7-2301e5755ed2",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match ((x) -> x == 10), 10",
+                "fullTitle": "Matching Values match ((x) -> x == 10), 10",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match((function(x) {\n  return x === 10;\n}), 10)).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "fc49949a-f8da-4361-af72-c0ca5d57ea94",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match ((x) -> x == 10), 20",
+                "fullTitle": "Matching Values match ((x) -> x == 10), 20",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match((function(x) {\n  return x === 10;\n}), 20)).to.be.false;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "fc3311c3-a04d-437f-9c70-40f7bbead7cc",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match ((x) -> x > 10), 20",
+                "fullTitle": "Matching Values match ((x) -> x > 10), 20",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match((function(x) {\n  return x > 10;\n}), 20)).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b9cd4cbb-ed1d-42cd-9b79-dfa8081c25d7",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "2b45f489-2041-4dae-b9ed-9eb8baa48fbf",
+              "5a98df10-6b7a-4916-a73d-e465a8c79e82",
+              "229d84b3-6f5f-4bd0-819e-beb2c9ad0896",
+              "d4e88a56-9410-4c51-87bf-e51db6c7e434",
+              "f72d5b6b-8eef-4a78-94b7-2301e5755ed2",
+              "fc49949a-f8da-4361-af72-c0ca5d57ea94",
+              "fc3311c3-a04d-437f-9c70-40f7bbead7cc",
+              "b9cd4cbb-ed1d-42cd-9b79-dfa8081c25d7"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "4ca733e3-f095-48b4-a5f1-e9d97ab5a75f",
+            "title": "Regular Expressions",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "match(re, 'test.js')",
+                "fullTitle": "Matching Regular Expressions match(re, 'test.js')",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match(re, 'test.js')).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "75912bc0-149a-4146-87d3-685b2345cc37",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "match(re, 'test.txt')",
+                "fullTitle": "Matching Regular Expressions match(re, 'test.txt')",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(match(re, 'test.txt')).to.be.false;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "39401c26-ca41-4b0b-bdc1-ee65b7019e32",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "75912bc0-149a-4146-87d3-685b2345cc37",
+              "39401c26-ca41-4b0b-bdc1-ee65b7019e32"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "5f07e32a-b7f5-4f1e-a254-a93873650a8e",
+            "title": "Variable Binding",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "match($('x'), 10)",
+                "fullTitle": "Matching Variable Binding match($('x'), 10)",
+                "timedOut": false,
+                "duration": 3,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "//$$._ match($('x'), 10)\nreturn expect(match($('x'), 10)).to.have.property('$x', 10);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "8ca4fc78-f5f1-45dd-87e1-d1e71593d2db",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "8ca4fc78-f5f1-45dd-87e1-d1e71593d2db"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 3,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "7bd75e3b-84e0-47b6-bed3-69e1e8175bd3",
+            "title": "Clauses",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "believe_(_Bob, _likes, _Fish).match Believe, __, _likes, __",
+                "fullTitle": "Matching Clauses believe_(_Bob, _likes, _Fish).match Believe, __, _likes, __",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return expect(believe_(_Bob, _likes, _Fish).match(Believe, __, _likes, __)).to.be.true;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "dd420678-d258-4ab2-8c1f-ca84b613489c",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "believe_(_Bob, _likes, _Fish).match Believe, $('x'), _likes, $('y')",
+                "fullTitle": "Matching Clauses believe_(_Bob, _likes, _Fish).match Believe, $('x'), _likes, $('y')",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var result;\nresult = believe_(_Bob, _likes, _Fish).match(Believe, $('x'), _likes, $('y'));\nexpect(result).to.have.property('$x', _Bob);\nreturn expect(result).to.have.property('$y', _Fish);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "6d57368c-b912-4bbf-bd1d-f13d778d97b7",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "dd420678-d258-4ab2-8c1f-ca84b613489c",
+              "6d57368c-b912-4bbf-bd1d-f13d778d97b7"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "bb5ec3d4-35d9-4482-93d7-b3452cf578eb",
+            "title": "Messages",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "assert_(Believe, _Bob, _likes, _Fish).match Assert, Believe, $('x'), _likes, $('y')",
+                "fullTitle": "Matching Messages assert_(Believe, _Bob, _likes, _Fish).match Assert, Believe, $('x'), _likes, $('y')",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var result;\nresult = assert_(Believe, _Bob, _likes, _Fish).match(Assert, Believe, $('x'), _likes, $('y'));\nexpect(result).to.have.property('$x', _Bob);\nreturn expect(result).to.have.property('$y', _Fish);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b5199005-78cc-4419-8e39-90720f8710ce",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "b5199005-78cc-4419-8e39-90720f8710ce"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "9d7f1afc-ffbe-4128-8fc0-ebce42f5737f",
+            "title": "Triggers",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "onAssert(Believe, $('x'), _likes, $('y')).match assert_(Believe, _Bob, _likes, _Fish)",
+                "fullTitle": "Matching Triggers onAssert(Believe, $('x'), _likes, $('y')).match assert_(Believe, _Bob, _likes, _Fish)",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var result;\nresult = onAssert(Believe, $('x'), _likes, $('y')).match(assert_(Believe, _Bob, _likes, _Fish));\nexpect(result).to.have.property('$x', _Bob);\nreturn expect(result).to.have.property('$y', _Fish);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "42c76d42-a894-4bbb-ad54-3cd3a266c91f",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "onAssert(Believe, $('x'), _likes, $('y')).match attempt_(Believe, _Bob, _likes, _Fish)",
+                "fullTitle": "Matching Triggers onAssert(Believe, $('x'), _likes, $('y')).match attempt_(Believe, _Bob, _likes, _Fish)",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var result;\nresult = onAssert(Believe, $('x'), _likes, $('y')).match(attempt_(Believe, _Bob, _likes, _Fish));\nreturn expect(result).to.be.false;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "ae76b6f1-ec3a-4173-ad00-44af2189b5f8",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "42c76d42-a894-4bbb-ad54-3cd3a266c91f",
+              "ae76b6f1-ec3a-4173-ad00-44af2189b5f8"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "5445789e-a75a-4816-a5d9-0d6d983fc845",
+            "title": "Triggers with Xtras",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/match.coffee",
+            "file": "/test/src/match.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "onAssert(Believe, $('x'), _likes, $('y')).match assert_(Believe, _Bob, _likes, _Fish)",
+                "fullTitle": "Matching Triggers with Xtras onAssert(Believe, $('x'), _likes, $('y')).match assert_(Believe, _Bob, _likes, _Fish)",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var result;\nresult = onAssert(Believe, $('x'), _likes, $('y')).match(assert_(Believe, _Bob, _likes, _Fish));\nexpect(result).to.have.property('$x', _Bob);\nreturn expect(result).to.have.property('$y', _Fish);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "99ac8e24-215c-49ba-902d-9ebc88eeff6a",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "99ac8e24-215c-49ba-902d-9ebc88eeff6a"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0b4ea0b1-6ed5-41f2-8fc1-9dda0cfe0a6a",
+        "title": "Message",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/message.coffee",
+        "file": "/test/src/message.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "0996318b-89ba-4b22-b20f-94fb510633fa",
+            "title": "@match",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/message.coffee",
+            "file": "/test/src/message.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Message @match should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var c1, c2, ctx, m;\nctx = new Context();\nc1 = believe_(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = believe_(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.h2(\"All Clauses\");\n$$._(String(ctx));\n$$._(ctx);\n$$.h2('Message Matching');\nm = new Assert(c1);\n$$._(m.match(Assert, Believe, _Bob, _likes, _Fish));\n$$._(m.match(Retract, Believe, _Bob, _likes, _Fish));\n$$._(m.match(Assert, Believe, _Joe, _likes, _Fish));\nreturn $$._(m.match(Assert, Achieve, _Joe, _likes, _Fish));",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d22fdef1-ab8e-4567-8835-967560c42047",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "d22fdef1-ab8e-4567-8835-967560c42047"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0f3d0087-8927-45c0-bd8d-269bd35f8711",
+        "title": "Module",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/module.coffee",
+        "file": "/test/src/module.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "bfeac862-a283-4a05-9cc5-6472c2e02fcf",
+            "title": "@action",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/module.coffee",
+            "file": "/test/src/module.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Module @action should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var c, c1, c2, ctx, exports, i, len, m, ref;\nctx = context_();\nc1 = believe_(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = believe_(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"All Clauses\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\nm = new Assert(c1);\n$$.$('Begin Task Execution');\nexports = module_(function() {\n  this.def(new Trigger(Assert, Believe, __, _likes, _Fish), function() {\n    var self;\n    self = this;\n    return this.task(function() {\n      $$._('Task Fire 1:');\n      return this.perform(self.msg.data.subj, _get, _Fish);\n    }).task(function() {\n      return $$._('Task Fire 2:');\n    });\n  });\n  this.def(new Trigger(Attempt, Achieve, __, _get, _Fish), function() {\n    var self;\n    self = this;\n    return this.task(function() {\n      return $$._(_$(self.msg.data.subj) + ' is getting Fish.');\n    });\n  });\n  this.defg(new Trigger(Attempt, Achieve, null, _impasse, null), function() {\n    //$$._ String(@rnr.ctx)\n    return $$._('Impassed');\n  });\n  return this.post(m);\n});\nreturn runner_().run(exports);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "4be6108e-11bf-457b-9aff-40d90b824cd6",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "4be6108e-11bf-457b-9aff-40d90b824cd6"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "1f0c8ad3-3b4f-42e2-abb6-e0a37bd8cc2d",
+        "title": "TNode",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/node.coffee",
+        "file": "/test/src/node.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "TNode should work",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var n1, n2, node, results;\n$$.$('class Plain');\n$$._(Plain);\n\n$$.$('class Node');\n$$._(Node.toString());\n$$.$('class Node.prototype');\n$$._(Node.prototype);\n\n$$.$('class DerivedNode');\n$$._(DerivedNode.toString());\n$$.$('class DerivedNode.prototype');\n$$._(DerivedNode.prototype);\n\n$$.$('n1.Node');\nn1 = new Node();\nn1.node1 = 0;\nn1.node2 = 2;\nn1.node1 = 1;\n$$._(n1);\n$$.$('nodes');\nfor (node of n1) {\n  $$._(node);\n}\n$$.$('n2.DerivedNode');\nn2 = new DerivedNode(3);\n$$._(n2);\n$$.$('nodes');\nresults = [];\nfor (node of n2) {\n  results.push($$._(node));\n}\nreturn results;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "05717bad-64cf-4143-a46f-553c64069fd9",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "05717bad-64cf-4143-a46f-553c64069fd9"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "a88e2bb1-9f71-4ed8-8394-f9a6d088a49c",
+        "title": "Parallel",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/parallel.coffee",
+        "file": "/test/src/parallel.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "b1f6159e-2f27-4a3a-b97c-b7cfeb5acf8d",
+            "title": "@action",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/parallel.coffee",
+            "file": "/test/src/parallel.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Parallel @action should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t1;\nt1 = parallel_(function() {\n  this.counter(1, 5, function() {\n    var counter1;\n    counter1 = this;\n    return this.task(function() {\n      return $$.log(`Counter 1:  ${counter1.value}`);\n    });\n  });\n  return this.counter(1, 10, function() {\n    var counter2;\n    counter2 = this;\n    return this.task(function() {\n      return $$.log(`Counter 2:  ${counter2.value}`);\n    });\n  });\n});\nreturn runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "bb9ab9f9-9aaf-4880-86f8-4140cb5d90a5",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "bb9ab9f9-9aaf-4880-86f8-4140cb5d90a5"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "89c8cfb6-2b7e-4eee-a07d-f511feb2a030",
+        "title": "Propose",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/propose.coffee",
+        "file": "/test/src/propose.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Propose should work",
+            "timedOut": false,
+            "duration": 2,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var c1, c2, ctx, m, rnr;\nctx = new Context();\nc1 = new Believe(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = new Believe(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"All Clauses\");\n$$._(String(ctx));\nm = new Propose(new Achieve(_Bob, _eat, _Fish));\n$$.$('Begin Task Execution');\nrnr = new Runner();\nrnr.def(new Trigger(Attempt, Achieve, __, _eat, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} buying Fish`);\n});\nrnr.def(new Trigger(Attempt, Achieve, __, _eat, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} catching Fish`);\n});\nrnr.def(new Trigger(Attempt, Achieve, null, _impasse, null), function() {\n  //$$._ String(@rnr.ctx)\n  return $$._('Impassed');\n});\nrnr.post(m);\nreturn rnr.run();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c0913c91-8cce-4ee5-9f6f-268697a99a50",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "c0913c91-8cce-4ee5-9f6f-268697a99a50"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "2d7a8f4b-82b4-4d99-bebd-ce37e3338122",
+        "title": "Query",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/qfilter.coffee",
+        "file": "/test/src/qfilter.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "36e9e262-ba66-43a9-907b-dab8a6341e9f",
+            "title": "Filter",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/qfilter.coffee",
+            "file": "/test/src/qfilter.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Query Filter should work",
+                "timedOut": false,
+                "duration": 5,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var _$x, _$y, _$z, ctx;\nctx = yamlcontext_().load($$.dataPath('bob.yml'));\n$$.h2(\"All Clauses\");\n$$._(ctx.toString());\n$$.h2('Binders');\n_$x = new Variable('$x');\n_$y = new Variable('$y');\n_$z = new Variable('$z');\n$$.$(\"ctx.query Believe, _$x, _likes, _$y\\n.and Believe, _$z, _likes, _$y\");\nctx.query(Believe, _$x, _likes, _$y).and(Believe, _$z, _likes, _$y).exec(function(binder) {\n  return $$._(binder);\n});\n$$.$(\"ctx.query Believe, _$x, _likes, _$y\\n.and Believe, _$z, _likes, _$y\\n.filter (binder) -> binder.$x != binder.$z\");\nreturn ctx.query(Believe, _$x, _likes, _$y).and(Believe, _$z, _likes, _$y).filter(function(binder) {\n  var $x, $z;\n  ({$x, $z} = binder);\n  return $x !== $z;\n}).exec(function(binder) {\n  return $$._(binder);\n});",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d08a07a5-b266-4d5f-8bfd-5420ff567a98",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "d08a07a5-b266-4d5f-8bfd-5420ff567a98"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 5,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "4f694bda-da23-4b81-98c5-8e11393e5ce8",
+        "title": "Query",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/qnegclause.coffee",
+        "file": "/test/src/qnegclause.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "6e9bfa24-0da3-4b8f-a9b4-1e90a94ad017",
+            "title": "NegClause",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/qnegclause.coffee",
+            "file": "/test/src/qnegclause.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Query NegClause should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var _$x, _$y, _$z, ctx;\nctx = yamlcontext_().load($$.dataPath('bob.yml'));\n$$.h2(\"All Clauses\");\n$$._(ctx.toString());\n$$.h2('Binders');\n_$x = new Variable('$x');\n_$y = new Variable('$y');\n_$z = new Variable('$z');\n$$.$(\"ctx.query Believe, _$x, _likes, _$y\\n.not Believe, _$x, _likes, _Chips\");\nreturn ctx.query(Believe, _$x, _likes, _Fish).not(Believe, _$x, _likes, _Chips).exec(function(binder) {\n  return $$._(binder);\n});",
+                "err": {},
+                "isRoot": false,
+                "uuid": "9195b619-81c8-48ed-9816-e4ea78ee874a",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "9195b619-81c8-48ed-9816-e4ea78ee874a"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "4bba8b47-9f64-4a16-929f-9495e5221ec1",
+        "title": "Query",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/qtyped.coffee",
+        "file": "/test/src/qtyped.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "c0b56cbf-7600-4b4e-9056-edd7446fead4",
+            "title": "Typed",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/qtyped.coffee",
+            "file": "/test/src/qtyped.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Query Typed should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var $x, $y, ctx;\nctx = yamlcontext_().load($$.dataPath('blocks.yml'));\n$$.h2(\"All Clauses\");\n$$._(ctx.toString());\n$$.h2('Binders');\n$x = new Variable('$x', function(v) {\n  return v instanceof Block;\n});\n$y = new Variable('$y');\n$$.$(\"ctx.query Believe, $x, _on, $y\");\nreturn ctx.query(Believe, $x, _on, $y).exec(function(binder) {\n  return $$._(binder);\n});",
+                "err": {},
+                "isRoot": false,
+                "uuid": "377ecdec-196f-4558-a1c5-9c830766c7a4",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "377ecdec-196f-4558-a1c5-9c830766c7a4"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "47b57c7e-79fa-4fef-b618-16763dc9603f",
+        "title": "Query",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/query.coffee",
+        "file": "/test/src/query.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "a64149d9-4934-45b0-805f-abffab03d262",
+            "title": "Basic",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/query.coffee",
+            "file": "/test/src/query.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Query Basic should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var _$d, _$w, _$x, ctx;\nctx = yamlcontext_().load($$.dataPath('cleavers.yml'));\n$$.h2(\"All Clauses\");\n$$._(ctx.toString());\n$$.h2('Binders');\n_$x = new Variable('$x');\n_$d = new Variable('$d');\n_$w = new Variable('$w');\n$$.$(\"ctx.query Believe, _$x, _dad, _$d\");\nctx.query(Believe, _$x, _dad, _$d).exec(function(binder) {\n  return $$._(binder);\n});\n$$.$(\"ctx.query Believe, _$x, _dad, _$d\\n.and Believe, _$d, _wife, _$w\");\nreturn ctx.query(Believe, _$x, _dad, _$d).and(Believe, _$d, _wife, _$w).exec(function(binder) {\n  return $$._(binder);\n});",
+                "err": {},
+                "isRoot": false,
+                "uuid": "7fcceb03-ec94-4f1e-8637-1de077f6a6a6",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "7fcceb03-ec94-4f1e-8637-1de077f6a6a6"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "46906d7c-e912-4a3c-be45-92555be77c5b",
+        "title": "Retract",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/retract.coffee",
+        "file": "/test/src/retract.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Retract should work",
+            "timedOut": false,
+            "duration": 5,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var c, c1, c2, ctx, i, len, m, ref, rnr;\nrnr = new Runner();\nctx = rnr.ctx;\nc1 = new Believe(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = new Believe(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"Context Before\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\nm = new Retract(c1);\n$$.$('Begin Task Execution');\nrnr.def(new Trigger(Retract, Believe, __, _likes, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} doesn't like Fish`);\n});\nrnr.post(m);\nreturn rnr.run().then(function() {\n  var j, len1, ref1, results;\n  $$.$(\"Context After\");\n  ref1 = ctx.clauses;\n  results = [];\n  for (j = 0, len1 = ref1.length; j < len1; j++) {\n    c = ref1[j];\n    results.push($$._(c.toString()));\n  }\n  return results;\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "02b27ed9-4387-4ec2-b7e2-e33d85dd894c",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "02b27ed9-4387-4ec2-b7e2-e33d85dd894c"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 5,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "9bfe3219-1f79-4744-95bd-2a64a9f60c63",
+        "title": "Rule",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/rule.coffee",
+        "file": "/test/src/rule.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "73bec715-2819-489c-90b3-497705ad0e4a",
+            "title": "@fire",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/rule.coffee",
+            "file": "/test/src/rule.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Rule @fire should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var c, c1, c2, ctx, i, len, m, ref, rnr;\nctx = new Context();\nc1 = new Believe(_Bob, _likes, _Fish);\nctx.add(c1);\nc2 = new Believe(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.$(\"All Clauses\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\nm = new Assert(c1);\n$$.$('Begin Task Execution');\nrnr = new Runner();\nrnr.def(new Trigger(Assert, Believe, __, _likes, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return this.task(function() {\n    $$._('A');\n    return this.perform($x, _get, _Fish);\n  }).task(function() {\n    return $$._('B');\n  });\n});\nrnr.def(new Trigger(Attempt, Achieve, __, _get, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(_$($x) + ' is getting Fish.');\n});\nrnr.post(m);\nreturn rnr.run();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "8ce732e7-dbbd-485a-9b1e-2522399f12c6",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "8ce732e7-dbbd-485a-9b1e-2522399f12c6"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "118b0cd2-7b2e-4741-b7b7-353901bb9080",
+        "title": "Runner",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/runner.coffee",
+        "file": "/test/src/runner.coffee",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "Runner \"before each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.pushLogger();\nreturn this.$('Baba');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ecdd11f2-e628-4ed8-be9b-b0a95bc97867",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "Runner \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.$('Yaga');\nreturn this.popLogger();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "41e0450a-3fc5-43e6-b642-1ff25f60baa4",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "2824acdf-fdaf-4fd1-80e1-9b9ea1e679ac",
+            "title": "@run",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/runner.coffee",
+            "file": "/test/src/runner.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Runner @run should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "return runner_(__main).run();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "f41e268a-2ada-4a09-8680-c697732eb1b5",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "f41e268a-2ada-4a09-8680-c697732eb1b5"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "7e743fc3-1c6f-40a2-b1d0-a247632c9065",
+        "title": "Sequence",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/sequence.coffee",
+        "file": "/test/src/sequence.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "e952c899-a5e6-46fd-9cc7-06f270b9d0c9",
+            "title": "In Parallel",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/sequence.coffee",
+            "file": "/test/src/sequence.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Sequence In Parallel should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t1, t2;\nt1 = sequence_(function() {\n  this.task(function() {\n    return $$._('A');\n  });\n  this.task(function() {\n    return $$._('B');\n  });\n  return this.task(function() {\n    return $$._('C');\n  });\n});\nt2 = sequence_(function() {\n  this.task(function() {\n    return $$._('D');\n  });\n  this.task(function() {\n    $$._('E');\n    return this.fail();\n  });\n  return this.task(function() {\n    return $$._('F');\n  });\n});\nreturn runner_().run(t1, t2);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b5347731-0275-4bec-a27a-66ee1feafd06",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "b5347731-0275-4bec-a27a-66ee1feafd06"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "23b31b48-8705-4921-bfec-3d84528fe529",
+        "title": "Streamer",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/streamer.coffee",
+        "file": "/test/src/streamer.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "9dfd9205-f153-4163-bad6-38443908d349",
+            "title": "@chain",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/streamer.coffee",
+            "file": "/test/src/streamer.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Streamer @chain should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var t1;\nt1 = chain_(function() {\n  return this.chain(new ReadFile($$.dataPath('test.txt'))).chain(new ConsoleWriter);\n});\nreturn runner_().run(t1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "bb38466c-10cb-40af-98f8-902ea7ede4e7",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "bb38466c-10cb-40af-98f8-902ea7ede4e7"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "ce9df501-c3cd-454e-a02f-525639fedf28",
+        "title": "Stringer",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/stringer.coffee",
+        "file": "/test/src/stringer.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Stringer should work",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var stringer;\nstringer = new Stringer();\nstringer.write('Hello');\nstringer.write('World');\n$$._(stringer);\n$$._(stringer.toString());\nreturn $$._(String(stringer));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "8db9e496-2521-4e96-946e-19680f8dc637",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "8db9e496-2521-4e96-946e-19680f8dc637"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "2adb57cb-8739-4412-9a77-ce042141c6dc",
+        "title": "Term",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/typed.coffee",
+        "file": "/test/src/typed.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "7a0c0800-0eb6-4531-bf91-1918c7624ce8",
+            "title": "typed",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/typed.coffee",
+            "file": "/test/src/typed.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Term typed should work",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var Table, t1, t2;\n//t = $_ 'Block1', 'Block'\nTable = class Table extends Term {};\nt1 = $_('Table1', Table);\n$$._(t1);\nt2 = $_('Block1', 'Block');\nreturn $$._(t2);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "8373dd23-85ca-419d-b7a9-40bfcf0ad320",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "8373dd23-85ca-419d-b7a9-40bfcf0ad320"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "96a5a22b-dedd-42b9-87a4-c708b62d3848",
+        "title": "Unit",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/unit.coffee",
+        "file": "/test/src/unit.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "b67f54d4-9997-4d70-ace7-03ee3959adec",
+            "title": "test",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/unit.coffee",
+            "file": "/test/src/unit.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Unit test should work",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var $$, unit_;\n({$$, unit_} = require('./common'));\n$$ = unit_(module, $$);\nreturn $$._($$.stringify($$));",
+                "err": {},
+                "isRoot": false,
+                "uuid": "1264b5ed-0bf1-4d34-8ca5-5290d4871acc",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "1264b5ed-0bf1-4d34-8ca5-5290d4871acc"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "5edaf6a4-5260-49ed-aa79-4db71615ec59",
+        "title": "Clause",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/xtra.coffee",
+        "file": "/test/src/xtra.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "a7a00f07-fde0-4997-bc40-45f7f18a6df2",
+            "title": "@xtra",
+            "fullFile": "/home/kurt/Dev/js/miajs/test/src/xtra.coffee",
+            "file": "/test/src/xtra.coffee",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should work",
+                "fullTitle": "Clause @xtra should work",
+                "timedOut": false,
+                "duration": 2,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "var c, c1, c2, ctx, i, len, m, r, ref, rnr;\nctx = context_();\nc1 = believe_(_Bob, _likes, _Tuna, {\n  with: _Cheese\n});\nctx.add(c1);\nc2 = believe_(_Joe, _likes, _Peas);\nctx.add(c2);\n$$.h2(\"All Clauses\");\nref = ctx.clauses;\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  $$._(c.toString());\n}\n$$.h2(\"Find in Context\");\nr = ctx.find(Believe, _Bob, _likes, _Tuna);\n$$.$(\"< Bob likes Tuna >\");\n$$._(r.toString());\nr = ctx.find(Believe, __, _likes, _Tuna);\n$$.$(\"< __ likes Tuna >\");\n$$._(r.toString());\nr = ctx.find(Believe, __, _likes, __);\n$$.$(\"< __ likes __ >\");\n$$._(r.toString());\n$$.h2(\"Message Matches\");\nm = new Assert(c1);\n$$._(m.match(Assert, Believe, __, _likes, _Tuna));\n$$._(m.match(Assert, Believe, _Bob, _likes, _Tuna));\n$$._(m.match(Assert, Believe, _Bob, _likes, _Fish));\n$$._(m.match(Retract, Believe, _Bob, _likes, _Fish));\n$$._(m.match(Assert, Believe, _Joe, _likes, _Fish));\nrnr = runner_();\nrnr.def(new OnAssert(Believe, __, _likes, _Tuna), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return this.task(function() {\n    $$._('A');\n    return this.perform($x, _get, _Fish);\n  }).task(function() {\n    return $$._('B');\n  });\n});\nrnr.def(new OnAttempt(Achieve, __, _get, _Fish), function() {\n  var $x;\n  $x = this.msg.data.subj;\n  return $$._(`${$x} is getting Fish.`);\n});\nrnr.post(m);\nreturn rnr.run();",
+                "err": {},
+                "isRoot": false,
+                "uuid": "15352999-018f-4eb5-8ecc-5a2b39c6295a",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "15352999-018f-4eb5-8ecc-5a2b39c6295a"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "b1efaccf-289c-4bcb-bf34-ecb4f79dc316",
+        "title": "Yaml",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/yaml.coffee",
+        "file": "/test/src/yaml.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "Yaml should work",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var doc, e;\ntry {\n  // Get document, or throw exception on error\n  doc = yaml.safeLoad(fs.readFileSync($$.dataPath('cleavers.yml'), 'utf8'));\n  return console.log(doc);\n} catch (error) {\n  e = error;\n  return console.log(e);\n}",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7c8ee58b-8cad-4fa3-ae01-1557f33b8584",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "7c8ee58b-8cad-4fa3-ae01-1557f33b8584"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "7b3ebdba-744f-44d8-ae9e-f7289d79f701",
+        "title": "YamlContext",
+        "fullFile": "/home/kurt/Dev/js/miajs/test/src/yamlcontext.coffee",
+        "file": "/test/src/yamlcontext.coffee",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should work",
+            "fullTitle": "YamlContext should work",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var c, ctx, i, len, ref, results;\nctx = new YamlContext().load($$.dataPath('cleavers.yml'));\n$$._(ctx);\nref = ctx.clauses;\nresults = [];\nfor (i = 0, len = ref.length; i < len; i++) {\n  c = ref[i];\n  results.push($$._(_$(c)));\n}\nreturn results;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "20135d60-7ce6-475f-80f6-85d180931cc5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "20135d60-7ce6-475f-80f6-85d180931cc5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

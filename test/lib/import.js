@@ -1,0 +1,26 @@
+(function() {
+  var $$, _$, assert, module_, runner_, runtime, unit_;
+
+  assert = require('chai').assert;
+
+  ({unit_, runtime} = require('./common'));
+
+  $$ = unit_(module);
+
+  ({runner_, module_, _$} = runtime);
+
+  describe('Task', function() {
+    return describe('@import', function() {
+      return it('should work', function() {
+        return runner_().run(module_(function() {
+          this.import(require, './cleavers');
+          $$.$("All Clauses");
+          return $$._(_$(this.rnr.ctx.clauses));
+        }));
+      });
+    });
+  });
+
+}).call(this);
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW1wb3J0LmpzIiwic291cmNlcyI6WyJpbXBvcnQuY29mZmVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEsTUFBQSxFQUFBLEVBQUEsRUFBQSxFQUFBLE1BQUEsRUFBQSxPQUFBLEVBQUEsT0FBQSxFQUFBLE9BQUEsRUFBQTs7RUFBQSxNQUFBLEdBQVMsT0FBQSxDQUFRLE1BQVIsQ0FBZSxDQUFDOztFQUN6QixDQUFBLENBQUMsS0FBRCxFQUFRLE9BQVIsQ0FBQSxHQUFtQixPQUFBLENBQVEsVUFBUixDQUFuQjs7RUFDQSxFQUFBLEdBQUssS0FBQSxDQUFNLE1BQU47O0VBQ0wsQ0FBQSxDQUFDLE9BQUQsRUFBVSxPQUFWLEVBQW1CLEVBQW5CLENBQUEsR0FBeUIsT0FBekI7O0VBRUEsUUFBQSxDQUFTLE1BQVQsRUFBaUIsUUFBQSxDQUFBLENBQUE7V0FDZixRQUFBLENBQVMsU0FBVCxFQUFvQixRQUFBLENBQUEsQ0FBQTthQUNsQixFQUFBLENBQUcsYUFBSCxFQUFrQixRQUFBLENBQUEsQ0FBQTtlQUNoQixPQUFBLENBQUEsQ0FBUyxDQUFDLEdBQVYsQ0FBYyxPQUFBLENBQVEsUUFBQSxDQUFBLENBQUE7VUFDcEIsSUFBQyxDQUFBLE1BQUQsQ0FBUSxPQUFSLEVBQWlCLFlBQWpCO1VBQ0EsRUFBRSxDQUFDLENBQUgsQ0FBSyxhQUFMO2lCQUNBLEVBQUUsQ0FBQyxDQUFILENBQUssRUFBQSxDQUFHLElBQUMsQ0FBQSxHQUFHLENBQUMsR0FBRyxDQUFDLE9BQVosQ0FBTDtRQUhvQixDQUFSLENBQWQ7TUFEZ0IsQ0FBbEI7SUFEa0IsQ0FBcEI7RUFEZSxDQUFqQjtBQUxBIiwic291cmNlc0NvbnRlbnQiOlsiYXNzZXJ0ID0gcmVxdWlyZSgnY2hhaScpLmFzc2VydFxue3VuaXRfLCBydW50aW1lfSA9IHJlcXVpcmUoJy4vY29tbW9uJylcbiQkID0gdW5pdF8gbW9kdWxlXG57cnVubmVyXywgbW9kdWxlXywgXyR9ID0gcnVudGltZVxuXG5kZXNjcmliZSAnVGFzaycsIC0+XG4gIGRlc2NyaWJlICdAaW1wb3J0JywgLT5cbiAgICBpdCAnc2hvdWxkIHdvcmsnLCAtPlxuICAgICAgcnVubmVyXygpLnJ1biBtb2R1bGVfIC0+XG4gICAgICAgIEBpbXBvcnQocmVxdWlyZSwgJy4vY2xlYXZlcnMnKVxuICAgICAgICAkJC4kIFwiQWxsIENsYXVzZXNcIlxuICAgICAgICAkJC5fIF8kIEBybnIuY3R4LmNsYXVzZXNcbiJdfQ==
